@@ -1,0 +1,778 @@
+/* tablet-mobie- */
+@media(max-width:1023px){
+    :root{
+        --nabar-height:0px;
+        --header-height:68px;
+    }
+    .hiden-on-mobile-tablet{
+        display: none;
+    }
+    .header__search{
+        width: 190%;
+        margin-left: 10px;
+    }
+    .header {
+        height: 73px;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+     /* menu giá mới nhất ..  tablet-mobie  */
+    .header_sort-bar{
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height: var( --header-sort-bar-height);
+        background-color: black;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+
+    }
+    .header_sort-item{
+        flex: 1;
+        
+    }
+    /* xoa dấu gạch ở đầu */
+    .header_sort-item:first-child .header_sort-link::before {
+        display: none;
+
+    }
+    .header_sort-link{
+        text-decoration: none;
+        color: var( --while-color);
+        font-size: 1.4rem;
+        display: block;
+        line-height: var(--header-sort-bar-height);
+        text-align: center;
+        position: relative;
+        
+    }
+    /* tạo dấu gạch */
+    .header_sort-link::before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        height: 60%;
+        border-left: 1px solid var(--border-color);
+        transform: translateY(-50%);
+
+    }
+    .header_sort-item-active .header_sort-link{
+        color: rgb(227, 227, 14);
+    }
+    /* kết thúc */
+
+    .banner{
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height)) ;
+    }
+    .header__search-option{
+        right: 191px;
+        top: 68px;
+    }
+    .header__with-search{
+        margin: -6px 8px 0 8px;
+    }
+    .home-product__pagination {
+        margin: 48px 106px 77px 115px;
+    }
+    .footer__head-gach::after{
+        display: none;
+    }
+    /* đóng mở bars  */
+    nav{
+        background-color: white;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+       
+    }
+    nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav li{
+        height: 50px;
+    }
+    nav a{
+        height: 100%;
+        padding: 0px 30px;
+        text-decoration: none;
+        display: flex;
+        color: black;
+        font-size: 1.65rem;
+        line-height: 52px;
+        font-weight: 500;
+       
+    }
+    nav a:hover{
+        background-color: rgb(13, 13, 13);
+        color: white;
+        
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgb(255, 255, 255,0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .sidebar li{
+        width: 100%;
+        
+    }
+    .sidebar a{
+        width: 100%;
+    }
+    .bars{
+        margin-left: -56px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        padding: 11px 0px 0px 22px;
+    }
+    .icon-tablet-mobile{
+        font-size: 2rem;
+        color: white;
+        padding-top: 17px;
+    }
+    .li-close{
+        margin-left: 77%;
+        width: 30px;
+        height: 0px;
+        padding-top: 26px;
+    }
+    .li-close >a{
+        margin-top: -22px;
+    }
+    .li-close >a >i{
+        font-size: 2.2rem;
+    }
+    .boderrr{
+        border-bottom: 1px solid;
+    }
+    /* home */
+    .header-productt h2{
+        display: none;
+    }
+    .header-productt-ul ul {
+        margin-top: 22px;
+        padding-right: 17px;
+    }
+    .tablet-mobie{
+        display: none;
+    }
+    .header-img-tablet{
+        width: 156px;
+    }
+    .home-img{
+        width: 121px !important;
+        margin-left: 32px !important;
+    }
+    .home-sale{
+        display: none;
+    }
+    .header-img-item-bt-item {
+        width: 46px;
+        height: 66px;
+    }
+    .img-padding{
+        width:300px;
+         height: 300px;
+    }
+    /* san pham home */
+    .body-mac-node{
+        display: none;
+    }
+    .item-kk {
+        margin-top: 120px;
+    }
+    .header-productt {
+        margin-top: 15px;
+    }
+    .header-top {
+        margin-top: 30px;
+    }
+  
+}
+
+/* mobie */
+@media(max-width:739px){
+    .hiden-on-mobile{
+        display: none;
+    }
+    /* mobie phan with search */
+    .header__with-search{
+        justify-content: space-between;
+    }
+    .header__logo {
+        width: 125px;
+        margin-top: -72px;
+        margin-left: -65px;
+        margin: -54px 0px 0px -37px;
+
+    }
+    .header__logo-img {
+        width: 124px;
+       
+    }
+    .header_mobile-search {
+        margin: -36px 9px -6px 58px;
+        cursor: pointer;
+    }
+    .header__cart-icon {
+
+        font-size: 2.0rem;
+    }
+    /*icon bars  */
+    .bars {
+        padding: 13px 0px 0px 22px;
+        width: 52px;
+        height: 59px;
+    }
+
+    /* search khi bam vao hien thi ra */
+    .header__search{
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height: 46px;
+        width: 100%;
+        margin: 0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        border-top: 1px solid var(--border-color);
+        padding: 0 16px;
+        animation: mobilesearch linear 0.3s;
+        display: none;
+    }
+    .header__search-history{
+        position: fixed;
+        top: 115px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.05);
+    }
+    /* hover chỉnh lại top right khi bấm vào trong / ngoai shop*/
+    .header__search-option {
+        right: 55px;
+        top: 47px;
+    }
+
+    /* dungf keyfam hieu ứng trượt trên xuog */
+    @keyframes mobilesearch {
+        from{
+            opacity: 0;
+            top: calc(var(--header-height)/2);
+        }
+        to{
+            opacity: 1;
+            top: var(--header-height);
+        }
+        
+    }
+    /* .home-product-item__price{
+        margin: 3px 14px;
+    } */
+    .home-product-item__price {
+        margin: 3px 25px;
+    }
+    /* .c-6 {
+        flex: 0 0 49%;
+        max-width: 49%;
+    } */
+    .home-product__pagination {
+        margin: 48px 0px 77px 0px;
+    }
+    .pagination-item {
+        margin: 0px 3px;
+    }
+     /* footer */
+     .footer-mobile-center{
+        text-align: center;
+    }
+    .footer__download-qr-img{
+        margin-left: 158px;
+    }
+    .footer__download-app-link{
+        margin-right: 140px;
+    }
+    .footer-apple-left{
+        margin-left: -12px;
+    }
+    /* cham soc khach hang 2  */
+    .footer__head {
+        line-height: 19px;
+    }
+    .footer-line-height1{
+        padding-bottom: 45px;
+        line-height: 19px;
+        
+    }
+    .footer-line-height2{
+        line-height: 20px;
+        padding-top: 6px;
+    }
+    .footer-line-height3{
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+    .footer-line-height4{
+        margin-top: 34px;
+    }
+    .footer-padding2ben-diachia{
+        padding: 0 4px;
+    }
+    /* trang 2 mua hang */
+    /* bootstrap */
+    .carousel-item-width {
+        margin-left: 46px;
+    }
+    /* heading */
+    .heading{
+        margin-left: 36px;
+    }
+    /* button */
+    .button-khoi-width, .heading-promotion-title, .heading-guarantee {
+        /* width: 421px; */
+        width: 343px;
+    }
+    .heading-LH{    
+        display: none  ;
+    }
+    .heading-title-boder {
+        width: 152px;
+    }
+    .heading-promotion-title{
+        height: 75px;
+    }
+    /* cmt-binh luan */
+    .comment-h2 {
+        margin-left: 36px;
+    }
+    .comment-box{
+        width: 400px;
+    }
+    .comment-box-right {
+        width: 90px;
+        
+    }
+    .comment-box-right-a{
+        width: 85px;
+        padding: 7px;
+
+    }
+    .comment-riview-1-space-span{
+        width: 135px;
+    }
+    .heading-cmt{
+        width: 400px;
+    }   
+    a{  
+        width: 300;
+    }
+    .form-control{
+        padding-left: 3px;
+        width: 348px;
+        margin-left: 23px;
+    }
+    .form-label{
+        margin-left: 23px;
+    }
+    .heading-summit-button{
+        margin-left: 69%;
+    }
+    /* home */
+    .home-item-iphone15{
+        display: none;
+    }
+    .home-Khang{
+        display: none;
+    }
+    .body-heading-bt {
+        flex-wrap: wrap;
+        display: flex;
+        width: 40%;
+        height: 40px;
+        align-self: center;
+        margin-left: 30%;
+        margin-top: 5px;
+    }
+    /* home san pham */
+    .body-mac-node-mobie{
+        display: none;
+    }
+    .icon-tablet-mobile{
+        margin-left: 48px;
+    }
+    /* trang chu */
+    .body-mac-sold {
+        margin: 0 44px !important;
+    }
+}
+/*mobie 415px iphone 7,8 plus  */
+@media(max-width:415px){
+
+         .home-product-item__price{
+        margin: 3px 14px;
+    }
+    .c-6 {
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+     /* footer */
+     .footer-mobile-center{
+        text-align: center;
+       
+    }
+    .footer__download-qr-img{
+        margin-left: 121px;
+    }
+    .footer__download-app-link{
+        margin-right: 125px;
+    }
+    .footer-apple-left{
+        margin-left: -12px;
+    }
+    /* cham soc khach hang 2  */
+    .footer__head {
+        line-height: 19px;
+    }
+    .footer-line-height1{
+        padding-bottom: 45px;
+        line-height: 19px;      
+    }
+    .footer-line-height2{
+        line-height: 20px;
+        padding-top: 6px;
+    }
+    .footer-line-height3{
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+    .footer-line-height4{
+        margin-top: 34px;
+    }
+    .footer-padding2ben-diachia{
+        padding: 0 4px;
+    }
+    /* trang 2 mua hang iphone X */
+     /* button */
+     .button-khoi-width, .heading-promotion-title, .heading-guarantee {
+        width: 317px;
+    }
+    .heading-LH{    
+        display: none  ;
+    }
+    .heading-title-boder {
+        width: 152px;
+    }
+    .heading-promotion-title{
+        height: 75px;
+    }
+    /* cmt-binh luan */
+    .comment-box{
+        width: 373px;
+    }
+    .comment-riview-1-space-span{
+        width: 117px;
+    }
+    .heading-cmt{
+        width: 373px;
+    }   
+    .form-control{
+        width: 327px;
+    }
+    /* home */
+    .header-productt-ul ul {
+        margin-top: 14px;
+        margin-left: 18px;
+    }
+    .header-productt-ul>ul>li>i{
+        display: none;
+    }
+    .header-productt-ul::before{
+        display: none;
+    }
+    .home-sale{
+        display: none;
+    }
+    .img-padding{
+        width: 410px;
+        height: 310px;
+    }
+    .item-kk{
+        margin-top: 120px;
+    }
+    .header-productt, .header-top{
+        margin-top: 10px;
+    }
+    
+
+}
+/* iphone x */
+@media(max-width:376px){
+    .comment-box{
+        width: 356px;
+    }
+    .comment-riview-1-space-span{
+        width: 102px;
+    }
+    .heading-cmt{
+        width: 358px;
+    }   
+    .form-control{
+        width: 311px;   
+    }
+    .heading-summit-button {
+        margin-left: 67%;
+    }
+}
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .header__search{
+        width: 190%;
+        margin: -12px 0 11px 0px;
+    }
+    .header__cart {
+        margin-top: -4px;
+    }
+    .header__cart-icon{
+        margin-left: 42px;
+    }
+    .hiden-on-tablet{
+        display: none;
+    }
+     /* ẩn tìm kiếm của mobile */
+     .header_mobile-search{
+        display: none;
+    }
+    .home-product-item__price{
+        margin: 3px 14px;
+    }
+    .home-product__pagination {
+        margin: 48px 45px 77px 42px;
+    }
+    .home-product-item-img {
+        padding-top: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 140px;
+        margin-left: 30px;
+    }
+    .footer{
+        padding-left: 73px;
+
+    }
+    .footer-tablet-4 {
+        padding-top: 10px;
+    }
+    .footer-paddingg{
+        padding-top: 10px;
+    }
+    .footer-line-height1{
+        padding-bottom: 45px;
+        line-height: 22px;
+        
+    }
+    .footer-line-height2{
+        line-height: 9px;
+        padding-top: 2px
+
+
+    }
+    .footer-line-height3{
+        line-height: 0;
+
+    }
+    .footer-line-height4{
+        margin-top: -9px;
+    }
+    /* trang 2 mua hang */
+    /* bootstrap */
+    .carousel-item-width {
+        margin-left: 39px;
+    }
+    /* button */
+    .button-khoi-width, .heading-promotion-title, .heading-guarantee {
+        /* width: 421px; */
+        width: 343px;
+    }
+    .heading-LH{    
+        display: none  ;
+    }
+    .heading-title-boder {
+        width: 152px;
+    }
+    .heading-promotion-title{
+        height: 75px;
+    }
+    /* cmt */
+    .comment-h2 {
+        margin-left: 134px;
+    }
+    .comment-box{
+        width: 642px;
+    }
+    .comment-box-right {
+        width: 137px;
+        
+    }
+    .comment-box-right-a{
+        width: 137px;
+
+    }
+    .comment-riview-1-space-span{
+        width: 327px;
+    }
+    .heading-cmt{
+        width: 642px;
+    }
+    .heading-summit-button{
+        margin-left: 74%;
+
+    }
+    .carousel-top {
+        margin-top: 20px;
+        margin-left: -44px;
+    }
+    .carousel-item {
+        margin-left: 13px;
+    }
+    /* chinh sua trang chu */
+    .body-mac-sold {
+        margin: 0 45px !important;
+    }
+    .bars {
+        margin-left: -69px;
+    }
+}
+/* PC -ipad pro*/
+@media(min-width:1024px) and (max-width:1280px){
+
+    .home-product-item__price{
+        margin: 0 4px;
+    }
+    .home-product-item-img {
+        width: 153px;
+        margin-left: 15px;
+    }
+    .header-productt h2 {
+        font-size: 2.2rem;
+    }
+    .home-img{
+        width: 124px !important;
+        margin-left: 8px !important;
+    }
+    .home-sale{
+        display: none;
+    }
+    .home-product-item__price-current {
+        padding-left: 33px;
+    }
+    .header-img-tablet{
+        width: 231px;
+    }
+    .home-sale{
+        display: none;
+    }
+    .body-kh-img{
+        height: 300px;
+    }
+}
+/* PC  ipad pro cinh sua footer */
+@media(min-width:1024px) and (max-width:1239px){
+    .footer-line-height1{
+        padding-bottom: 45px;
+        line-height: 22px;    
+    }
+    .footer-line-height2{
+        line-height: 0px;
+        padding-top: 2px
+    }
+    .footer-line-height3{
+        margin-top: -10px;
+
+    }
+    .footer-line-height4{
+        margin-top: -7px;
+    }
+    .header-navigation-item{
+        margin: 0 -125px 0 1px;
+    }
+    .body-mac-sold {
+        margin: 0px 25px !important;
+    }
+}
+/* full PC */
+@media (min-width:1024px){
+    .header_sort-bar{
+        display: none;
+    }
+     /* ẩn tìm kiếm của mobile */
+     .header_mobile-search{
+        display: none;
+    }
+    /* đi chơi về fix */
+    .header {
+        position: fixed;
+        width: 100%;
+        transform: translateY(-148px);
+        z-index: 2;
+    }
+   
+    /* trang 2 mua hang */
+    .header-muahang{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        margin-top: 149px;
+
+    }
+    .header-navigation {
+        position: fixed;
+        transform: translateY(-52px);
+        z-index: 1;
+    }
+    
+    /* trang 2 mua hang */
+    .header-navigation-muahang {
+        position: fixed;
+        z-index: 1;
+        margin-top: 150px;
+    }
+    .banner{
+        margin-top: 148px;
+    }
+   .bars{
+        display: none;
+   }
+   .navvv{
+        display: none;
+   }
+   .header__cart {
+    margin-top: 41px;
+    }
+    .header__cart-icon {
+        font-size: 2.4rem;
+    }
+}  
