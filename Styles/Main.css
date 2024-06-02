@@ -7,26 +7,21 @@
 .header {
     height: 97px;
     background-color: #181818;
-
 }
-
 .header__navbar {
     display: flex;
     justify-content: space-between;
 }
-
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
     margin: 4px 0 0 0;
     display: flex;
 }
-
 .header__navbar-item {
     margin: 0 8px;
     position: relative;
 }
-
 .header__navbar-user {
     display: flex;
     justify-items: center;
@@ -2692,6 +2687,7 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     background: #011015;
+    z-index: 99999;
 }
 .container9{
     position: relative;
@@ -2839,7 +2835,7 @@ input::placeholder{
     z-index: 100;
     border: none;
     outline: none;
-    background: linear-gradient(45deg, #e57d0d, #ffff99);
+    background: linear-gradient(45deg, #970c0c, #970c0c);
     color: white;
     cursor: pointer;
     border-radius: 50%;

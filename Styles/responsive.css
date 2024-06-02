@@ -125,7 +125,7 @@
         height: 100vh;
         width: 250px;
         z-index: 999;
-        background-color: rgb(255, 255, 255,0.2);
+        background-color: rgb(255, 255, 255,0.4);
         backdrop-filter: blur(10px);
         box-shadow: -10px 0 10px rgba(0,0,0,0.1);
         display: none;
@@ -210,6 +210,7 @@
     .header-top {
         margin-top: 30px;
     }
+   
   
 }
 
@@ -427,6 +428,66 @@
     .body-mac-sold {
         margin: 0 44px !important;
     }
+    /* sua giao diện mobie */
+    .home-product-item-img {
+        width: 149px;
+        margin-left: 19px;
+    }
+    .home-product-item__price-old {
+        display: none;
+    }
+    .home-product-item__price-current {
+        padding-left: 31px;
+        color: #a53838;
+    }
+    .home-product-item__action {
+        display: none;
+    }
+    .home-product-item__origin {
+        margin: 6px 10px;
+    }
+    .home-img-tablet{
+        margin-left: 33px !important;
+    }
+    .home-product-item__name {
+        font-size: 1.25rem;
+        margin: 0 11px;
+    }
+    .home-product-item__price-current {
+        padding-left: 9px;
+    }
+    .home-sold-gia{
+        padding-left: 33px !important;
+    }
+    .body-mac-margin {
+        margin-top: 25px;
+        margin-left: 3px;
+    }
+    .marginleft-mobie{
+        margin-left: 2px;
+    }
+    .home-item-name-mobie{
+        margin: 1px 31px;
+    }
+    .img-iner-width-1 {
+        height: 278px;
+    }
+    .header-top {
+        height: 306px;
+    }
+    .body-mac-bg {
+        height: 300px;
+        margin-top: 0;
+    }
+    .home-product-item {
+        margin-left: 1px;
+        margin-top: -2px;
+    }
+    .body-kh-img {
+        padding: 0;
+    }
+   
+  
 }
 /*mobie 415px iphone 7,8 plus  */
 @media(max-width:415px){
@@ -524,7 +585,7 @@
     }
     .header-productt, .header-top{
         margin-top: 10px;
-    }
+    } 
     
 
 }
@@ -544,6 +605,35 @@
     }
     .heading-summit-button {
         margin-left: 67%;
+    }
+    .header-productt-ul ul {
+        margin: 22px 0px !important;
+        padding: 0;
+    }
+    .header-productt-ul{
+        margin-left: 15px;
+    }
+    /* căn chỉnh lại khung các item */
+    .body-mac-bg {
+        height: 283px;
+        margin-top: 0;
+    }
+    .home-product-item {
+        margin-left: 1px;
+        margin-top: 24px;
+    }
+    .body-kh-img {
+        padding: 0;
+    }
+    .body-mac-margin {
+        margin-top: 3px;
+    }
+    .header__cart-list {
+        right: -27px;
+        width: 382px;
+    }
+    .header__cart-list::after {
+        right: 19px;
     }
 }
 /* tablet */
@@ -621,7 +711,7 @@
         display: none  ;
     }
     .heading-title-boder {
-        width: 152px;
+        width: 146px;
     }
     .heading-promotion-title{
         height: 75px;
@@ -663,8 +753,28 @@
         margin: 0 45px !important;
     }
     .bars {
-        margin-left: -69px;
+        margin-left: -65px;
     }
+    .home-img-tablet{
+        margin-left: 12px !important;
+    }
+    .home-product-item__name {
+        font-size: 1.4rem;
+        margin: 0 11px;
+    }
+    .home-product-item__price-current {
+        padding-left: 9px;
+    }
+    .home-product-item__price-old {
+        font-size: 1.3rem;
+    }
+    .bars{
+        margin-left: 0;
+    }
+    .bars-muahang{
+        margin-left: -65px;
+    }
+
 }
 /* PC -ipad pro*/
 @media(min-width:1024px) and (max-width:1280px){
@@ -681,7 +791,7 @@
     }
     .home-img{
         width: 124px !important;
-        margin-left: 8px !important;
+        margin-left: 44px !important;
     }
     .home-sale{
         display: none;
@@ -697,6 +807,19 @@
     }
     .body-kh-img{
         height: 300px;
+    }
+    .home-img-tablet{
+        margin-left: 19px !important;
+    }
+    .home-product-item__name {
+        font-size: 1.25rem;
+        margin: 0 27px;
+    }
+    .home-product-item__price-current {
+        padding-left: 34px;
+    }
+    .home-item-name-tabletpro{
+        margin: 0 9px;
     }
 }
 /* PC  ipad pro cinh sua footer */
@@ -736,30 +859,31 @@
     .header {
         position: fixed;
         width: 100%;
-        transform: translateY(-148px);
+        /* transform: translateY(-148px); */
         z-index: 2;
+        top: 0;
     }
    
     /* trang 2 mua hang */
-    .header-muahang{
+    /* .header-muahang{
         position: fixed;
         width: 100%;
         z-index: 2;
         margin-top: 149px;
 
-    }
+    } */
     .header-navigation {
         position: fixed;
-        transform: translateY(-52px);
+        transform: translateY(96px);
         z-index: 1;
     }
     
     /* trang 2 mua hang */
-    .header-navigation-muahang {
+    /* .header-navigation-muahang {
         position: fixed;
         z-index: 1;
         margin-top: 150px;
-    }
+    } */
     .banner{
         margin-top: 148px;
     }
@@ -774,5 +898,15 @@
     }
     .header__cart-icon {
         font-size: 2.4rem;
+    }
+    .sforum__content-a-tabletpro{
+        display: none;
+    }
+    .content-item__text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .block-sforum_btn-showmore .btn-show-more {
+        margin-top: -21px;
     }
 }  
