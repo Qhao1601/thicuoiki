@@ -125,7 +125,7 @@
         height: 100vh;
         width: 250px;
         z-index: 999;
-        background-color: rgb(255, 255, 255,0.4);
+        background-color: rgb(188, 177, 177);
         backdrop-filter: blur(10px);
         box-shadow: -10px 0 10px rgba(0,0,0,0.1);
         display: none;
@@ -213,7 +213,6 @@
    
   
 }
-
 /* mobie */
 @media(max-width:739px){
     .hiden-on-mobile{
@@ -460,7 +459,7 @@
         padding-left: 33px !important;
     }
     .body-mac-margin {
-        margin-top: 25px;
+        margin-top: 2px;
         margin-left: 3px;
     }
     .marginleft-mobie{
@@ -481,7 +480,7 @@
     }
     .home-product-item {
         margin-left: 1px;
-        margin-top: -2px;
+        margin-top: 23px;
     }
     .body-kh-img {
         padding: 0;
@@ -491,8 +490,7 @@
 }
 /*mobie 415px iphone 7,8 plus  */
 @media(max-width:415px){
-
-         .home-product-item__price{
+    .home-product-item__price{
         margin: 3px 14px;
     }
     .c-6 {
@@ -586,7 +584,9 @@
     .header-productt, .header-top{
         margin-top: 10px;
     } 
-    
+    .body-mac-margin {
+        margin-left: 3px !important;
+    }
 
 }
 /* iphone x */
@@ -612,6 +612,7 @@
     }
     .header-productt-ul{
         margin-left: 15px;
+        margin-top: -7px;
     }
     /* căn chỉnh lại khung các item */
     .body-mac-bg {
@@ -635,6 +636,56 @@
     .header__cart-list::after {
         right: 19px;
     }
+    .img-iner-width-1 {
+        height: 220px;
+    }
+}
+/* iphone 14 promax */
+@media(max-width:431px){
+    .marginleft-mobie {
+       margin-left: 0;
+    }
+    .home-product-item {
+        margin-top: 18px;
+    }
+    .header-productt-ul ul {
+        padding-right: 0px;
+    }
+    .header-productt-ul ul {
+        padding-right: 0px;
+        margin-left: 10px;
+        margin-top: 12px;
+    }
+    .header-productt-ul ul li {
+        padding-right: 5px;
+    }
+    .body-mac-margin {
+        margin-left: 0px;
+    }
+    .body-kh-img {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .img-iner-width-1 {
+        height: 241px;
+    }
+}
+/* iphone 12 pro */
+@media(max-width:391px){
+    .home-product-item {
+        margin-top: 32px;
+    }
+    .img-iner-width-1 {
+        height: 241px;
+    }
+    .header__cart-list {
+        right: -27px;
+    }
+    .header__cart-list::after {
+        right: 20px;
+    }
+
 }
 /* tablet */
 @media (min-width:740px) and (max-width:1023px){
@@ -773,6 +824,9 @@
     }
     .bars-muahang{
         margin-left: -65px;
+    }
+    .bars-2{
+        margin-left: -68px;
     }
 
 }
